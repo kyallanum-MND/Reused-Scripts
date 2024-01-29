@@ -20,6 +20,6 @@ echo "Installing docker & docker compose plugin"
 apt-get update
 apt-get -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-usermod -aG docker $USER
+usermod -aG docker $(id -u $SUDO_USER)
 
 echo "Log out and back in for changes to occur"
