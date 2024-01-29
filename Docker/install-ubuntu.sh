@@ -18,7 +18,7 @@ echo "Added..."
 
 echo "Installing docker & docker compose plugin"
 apt-get update
-apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+apt-get -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 usermod -aG docker $USER
 
